@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F10000000000000000000001 /* MoneyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000101; };
+		F10000000000000000000002 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000102; };
+		F10000000000000000000003 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000103; };
+		F10000000000000000000004 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000104; };
+		F10000000000000000000005 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000105; };
+		F10000000000000000000006 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000106; };
+		F10000000000000000000007 /* TransactionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000107; };
+		F10000000000000000000008 /* TransactionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000108; };
+		F10000000000000000000009 /* BudgetSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000109; };
+		F10000000000000000000010 /* PremiumStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000110; };
+		F10000000000000000000011 /* PremiumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000111; };
+		F10000000000000000000012 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000112; };
+		F10000000000000000000013 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000113; };
+		F10000000000000000000014 /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000114; };
+		F10000000000000000000015 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000115; };
+		F10000000000000000000016 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000116; };
+		F10000000000000000000017 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000117; };
+		F10000000000000000000018 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000118; };
+		F10000000000000000000019 /* TransactionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000119; };
+		F10000000000000000000020 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000120; };
+		F10000000000000000000021 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000121; };
+		F10000000000000000000022 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000122; };
+		F10000000000000000000023 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000123; };
+		F10000000000000000000024 /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000124; };
+		F10000000000000000000025 /* GlowButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000125; };
+		F10000000000000000000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000126; };
+		T1A001 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F001; };
+		PP0001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = PP0002; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		T1P001 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10000000000000000001000;
+			proxyType = 1;
+			remoteGlobalIDString = F10000000000000000000600;
+			remoteInfo = MoneyTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10000000000000000000101 /* MoneyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerApp.swift; sourceTree = "<group>"; };
+		F10000000000000000000102 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F10000000000000000000103 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		F10000000000000000000104 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		F10000000000000000000105 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F10000000000000000000106 /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		F10000000000000000000107 /* TransactionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRecord.swift; sourceTree = "<group>"; };
+		F10000000000000000000108 /* TransactionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategory.swift; sourceTree = "<group>"; };
+		F10000000000000000000109 /* BudgetSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSetting.swift; sourceTree = "<group>"; };
+		F10000000000000000000110 /* PremiumStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumStatus.swift; sourceTree = "<group>"; };
+		F10000000000000000000111 /* PremiumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumService.swift; sourceTree = "<group>"; };
+		F10000000000000000000112 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F10000000000000000000113 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000114 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000115 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000116 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F10000000000000000000117 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		F10000000000000000000118 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		F10000000000000000000119 /* TransactionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRowView.swift; sourceTree = "<group>"; };
+		F10000000000000000000120 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		F10000000000000000000121 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		F10000000000000000000122 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F10000000000000000000123 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F10000000000000000000124 /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		F10000000000000000000125 /* GlowButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowButtonStyle.swift; sourceTree = "<group>"; };
+		F10000000000000000000126 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000000000000000000200 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		T1F001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		PP0002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		T1R001 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10000000000000000000300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		T1D001 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10000000000000000000400 = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000401 /* MoneyTracker */,
+				T1G001 /* MoneyTrackerTests */,
+				F10000000000000000000500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F10000000000000000000401 /* MoneyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000402 /* App */,
+				F10000000000000000000403 /* Constants */,
+				F10000000000000000000404 /* Extensions */,
+				F10000000000000000000405 /* Models */,
+				F10000000000000000000406 /* Services */,
+				F10000000000000000000407 /* ViewModels */,
+				F10000000000000000000408 /* Views */,
+				F10000000000000000000126 /* Assets.xcassets */,
+				PP0002 /* PrivacyInfo.xcprivacy */,
+			);
+			path = MoneyTracker;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000402 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000101 /* MoneyTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000403 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000103 /* AppColor.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000404 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000104 /* Color+Hex.swift */,
+				F10000000000000000000105 /* Date+Extensions.swift */,
+				F10000000000000000000106 /* Double+Currency.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000405 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000107 /* TransactionRecord.swift */,
+				F10000000000000000000108 /* TransactionCategory.swift */,
+				F10000000000000000000109 /* BudgetSetting.swift */,
+				F10000000000000000000110 /* PremiumStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000406 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000111 /* PremiumService.swift */,
+				F10000000000000000000112 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000407 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000113 /* TransactionViewModel.swift */,
+				F10000000000000000000114 /* StatisticsViewModel.swift */,
+				F10000000000000000000115 /* BudgetViewModel.swift */,
+				F10000000000000000000116 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000408 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000102 /* MainTabView.swift */,
+				F10000000000000000000409 /* Transaction */,
+				F10000000000000000000410 /* Statistics */,
+				F10000000000000000000411 /* Budget */,
+				F10000000000000000000412 /* Calendar */,
+				F10000000000000000000413 /* Settings */,
+				F10000000000000000000414 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000409 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000117 /* TransactionListView.swift */,
+				F10000000000000000000118 /* AddTransactionView.swift */,
+				F10000000000000000000119 /* TransactionRowView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000410 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000120 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000411 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000121 /* BudgetView.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000412 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000122 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000413 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000123 /* SettingsView.swift */,
+				F10000000000000000000124 /* PremiumView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000414 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000125 /* GlowButtonStyle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F10000000000000000000500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000200 /* MoneyTracker.app */,
+				T1R001 /* MoneyTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		T1G001 = {
+			isa = PBXGroup;
+			children = (
+				T1F001,
+			);
+			path = MoneyTrackerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F10000000000000000000600 /* MoneyTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F10000000000000000000900 /* Build configuration list for PBXNativeTarget "MoneyTracker" */;
+			buildPhases = (
+				F10000000000000000000700 /* Sources */,
+				F10000000000000000000300 /* Frameworks */,
+				F10000000000000000000800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyTracker;
+			productName = MoneyTracker;
+			productReference = F10000000000000000000200 /* MoneyTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T1N001 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = T1CL01;
+			buildPhases = (
+				T1S001,
+				T1D001,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				T1DEP1,
+			);
+			name = MoneyTrackerTests;
+			productName = MoneyTrackerTests;
+			productReference = T1R001;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F10000000000000000001000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F10000000000000000000600 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F10000000000000000001100 /* Build configuration list for PBXProject "MoneyTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+				Base,
+			);
+			mainGroup = F10000000000000000000400;
+			productRefGroup = F10000000000000000000500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F10000000000000000000600 /* MoneyTracker */,
+				T1N001 /* MoneyTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F10000000000000000000800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10000000000000000000026 /* Assets.xcassets in Resources */,
+				PP0001 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F10000000000000000000700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10000000000000000000001 /* MoneyTrackerApp.swift in Sources */,
+				F10000000000000000000002 /* MainTabView.swift in Sources */,
+				F10000000000000000000003 /* AppColor.swift in Sources */,
+				F10000000000000000000004 /* Color+Hex.swift in Sources */,
+				F10000000000000000000005 /* Date+Extensions.swift in Sources */,
+				F10000000000000000000006 /* Double+Currency.swift in Sources */,
+				F10000000000000000000007 /* TransactionRecord.swift in Sources */,
+				F10000000000000000000008 /* TransactionCategory.swift in Sources */,
+				F10000000000000000000009 /* BudgetSetting.swift in Sources */,
+				F10000000000000000000010 /* PremiumStatus.swift in Sources */,
+				F10000000000000000000011 /* PremiumService.swift in Sources */,
+				F10000000000000000000012 /* NotificationService.swift in Sources */,
+				F10000000000000000000013 /* TransactionViewModel.swift in Sources */,
+				F10000000000000000000014 /* StatisticsViewModel.swift in Sources */,
+				F10000000000000000000015 /* BudgetViewModel.swift in Sources */,
+				F10000000000000000000016 /* SettingsViewModel.swift in Sources */,
+				F10000000000000000000017 /* TransactionListView.swift in Sources */,
+				F10000000000000000000018 /* AddTransactionView.swift in Sources */,
+				F10000000000000000000019 /* TransactionRowView.swift in Sources */,
+				F10000000000000000000020 /* StatisticsView.swift in Sources */,
+				F10000000000000000000021 /* BudgetView.swift in Sources */,
+				F10000000000000000000022 /* CalendarView.swift in Sources */,
+				F10000000000000000000023 /* SettingsView.swift in Sources */,
+				F10000000000000000000024 /* PremiumView.swift in Sources */,
+				F10000000000000000000025 /* GlowButtonStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		T1S001 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				T1A001,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		T1DEP1 = {
+			isa = PBXTargetDependency;
+			target = F10000000000000000000600;
+			targetProxy = T1P001;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F10000000000000000001200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F10000000000000000001300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F10000000000000000001400 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Money Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F10000000000000000001500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Money Tracker";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		T1BC01 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoneyTracker";
+			};
+			name = Debug;
+		};
+		T1BC02 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoneyTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F10000000000000000000900 /* Build configuration list for PBXNativeTarget "MoneyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000001400 /* Debug */,
+				F10000000000000000001500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F10000000000000000001100 /* Build configuration list for PBXProject "MoneyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F10000000000000000001200 /* Debug */,
+				F10000000000000000001300 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		T1CL01 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				T1BC01,
+				T1BC02,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = F10000000000000000001000 /* Project object */;
+}

@@ -4,7 +4,6 @@ import SwiftData
 /// 예산 뷰 — 원형 프로그레스, 예산 설정, 알림
 struct BudgetView: View {
     @Environment(\.modelContext) private var modelContext
-    @EnvironmentObject private var premiumService: PremiumService
     @StateObject private var viewModel = BudgetViewModel()
 
     var body: some View {

@@ -1,10 +1,8 @@
 import Foundation
 
-/// 설정 뷰모델 — 프리미엄 및 앱 정보
+/// 설정 뷰모델 — 앱 정보 및 CSV 내보내기
 @MainActor
 final class SettingsViewModel: ObservableObject {
-    /// 프리미엄 뷰 표시 여부
-    @Published var showingPremiumView: Bool = false
     /// CSV 공유 시트 표시 여부
     @Published var showingShareSheet: Bool = false
     /// 생성된 CSV 파일 URL

@@ -35,12 +35,20 @@
 		F10000000000000000000026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000126; };
 		T1A001 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = T1F001; };
 		PP0001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = PP0002; };
+		UIMT001 /* ScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UIMT002; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		T1P001 = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F10000000000000000001000;
+			proxyType = 1;
+			remoteGlobalIDString = F10000000000000000000600;
+			remoteInfo = MoneyTracker;
+		};
+		UIMT014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10000000000000000001000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F10000000000000000000600;
 			remoteInfo = MoneyTracker;
@@ -78,6 +86,8 @@
 		T1F001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		PP0002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		T1R001 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		UIMT002 /* ScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTests.swift; sourceTree = "<group>"; };
+		UIMT003 /* MoneyTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		UIMT012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +121,7 @@
 				F10000000000000000000401 /* MoneyTracker */,
 				T1G001 /* MoneyTrackerTests */,
 				F10000000000000000000500 /* Products */,
+				UIMT004 /* MoneyTrackerUITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +137,7 @@
 				F10000000000000000000408 /* Views */,
 				F10000000000000000000126 /* Assets.xcassets */,
 				PP0002 /* PrivacyInfo.xcprivacy */,
+				UIMT003 /* MoneyTrackerUITests.xctest */,
 			);
 			path = MoneyTracker;
 			sourceTree = "<group>";
@@ -250,6 +269,7 @@
 			children = (
 				F10000000000000000000200 /* MoneyTracker.app */,
 				T1R001 /* MoneyTrackerTests.xctest */,
+				UIMT003 /* MoneyTrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +280,14 @@
 				T1F001,
 			);
 			path = MoneyTrackerTests;
+			sourceTree = "<group>";
+		};
+		UIMT004 /* MoneyTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				UIMT002 /* ScreenshotTests.swift */,
+			);
+			path = MoneyTrackerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +327,23 @@
 			productReference = T1R001;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		UIMT010 /* MoneyTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = UIMT020;
+			buildPhases = (
+				UIMT011 /* Sources */,
+				UIMT012 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				UIMT013 /* PBXTargetDependency */,
+			);
+			name = MoneyTrackerUITests;
+			productName = MoneyTrackerUITests;
+			productReference = UIMT003 /* MoneyTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -330,6 +375,7 @@
 			targets = (
 				F10000000000000000000600 /* MoneyTracker */,
 				T1N001 /* MoneyTrackerTests */,
+				UIMT010 /* MoneyTrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -387,6 +433,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		UIMT011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				UIMT001 /* ScreenshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -394,6 +448,11 @@
 			isa = PBXTargetDependency;
 			target = F10000000000000000000600;
 			targetProxy = T1P001;
+		};
+		UIMT013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F10000000000000000000600 /* MoneyTracker */;
+			targetProxy = UIMT014 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -550,6 +609,42 @@
 			};
 			name = Release;
 		};
+		UIMT021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyTracker;
+			};
+			name = Debug;
+		};
+		UIMT022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.entangle.moneytracker.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoneyTracker;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,6 +671,15 @@
 			buildConfigurations = (
 				T1BC01,
 				T1BC02,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		UIMT020 /* Build configuration list for PBXNativeTarget "MoneyTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				UIMT021 /* Debug */,
+				UIMT022 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

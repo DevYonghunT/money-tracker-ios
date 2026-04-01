@@ -1,14 +1,10 @@
 import SwiftUI
 import SwiftData
 
-/// 설정 뷰 — 프리미엄, 앱 정보
+/// 설정 뷰 — 데이터 관리, 앱 정보
 struct SettingsView: View {
     @Environment(\.modelContext) private var modelContext
-    @EnvironmentObject private var premiumService: PremiumService
     @StateObject private var viewModel = SettingsViewModel()
-
-    /// 프리미엄 필요 알림 표시 여부
-    @State private var showingPremiumAlert: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -17,9 +13,6 @@ struct SettingsView: View {
 
                 ScrollView {
                     VStack(spacing: 20) {
-                        // 프리미엄 섹션
-                        premiumSection
-
                         // 데이터 관리 섹션
                         dataSection
 
@@ -32,64 +25,12 @@ struct SettingsView: View {
             .navigationTitle("설정")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarColorScheme(.dark, for: .navigationBar)
-            .sheet(isPresented: $viewModel.showingPremiumView) {
-                PremiumView()
-            }
             .sheet(isPresented: $viewModel.showingShareSheet) {
                 if let url = viewModel.csvFileURL {
                     ShareSheet(items: [url])
                 }
             }
-            .alert("프리미엄 필요", isPresented: $showingPremiumAlert) {
-                Button("확인", role: .cancel) { }
-            } message: {
-                Text("CSV 내보내기는 프리미엄 기능입니다.\n프리미엄으로 업그레이드하세요!")
-            }
         }
-    }
-
-    /// 프리미엄 섹션
-    private var premiumSection: some View {
-        VStack(spacing: 0) {
-            // 프리미엄 상태
-            Button {
-                viewModel.showingPremiumView = true
-            } label: {
-                HStack {
-                    Image(systemName: premiumService.isPremium ? "crown.fill" : "crown")
-                        .font(.title3)
-                        .foregroundStyle(AppColor.secondary)
-
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("프리미엄")
-                            .font(.subheadline.bold())
-                            .foregroundStyle(AppColor.textPrimary)
-                        Text(premiumService.isPremium ? "활성화됨" : "무료 플랜")
-                            .font(.caption)
-                            .foregroundStyle(AppColor.textSecondary)
-                    }
-
-                    Spacer()
-
-                    if !premiumService.isPremium {
-                        Text("업그레이드")
-                            .font(.caption.bold())
-                            .foregroundStyle(AppColor.background)
-                            .padding(.horizontal, 12)
-                            .padding(.vertical, 6)
-                            .background(AppColor.secondary)
-                            .cornerRadius(12)
-                    }
-
-                    Image(systemName: "chevron.right")
-                        .font(.caption)
-                        .foregroundStyle(AppColor.textSecondary)
-                }
-                .padding(16)
-            }
-        }
-        .background(AppColor.cardBackground)
-        .cornerRadius(12)
     }
 
     /// 앱 정보 섹션
@@ -111,11 +52,7 @@ struct SettingsView: View {
     private var dataSection: some View {
         VStack(spacing: 0) {
             Button {
-                if premiumService.isPremium {
-                    exportCSV()
-                } else {
-                    showingPremiumAlert = true
-                }
+                exportCSV()
             } label: {
                 HStack {
                     Image(systemName: "square.and.arrow.up")
@@ -127,16 +64,6 @@ struct SettingsView: View {
                         .foregroundStyle(AppColor.textPrimary)
 
                     Spacer()
-
-                    if !premiumService.isPremium {
-                        Text("프리미엄")
-                            .font(.caption2.bold())
-                            .foregroundStyle(AppColor.background)
-                            .padding(.horizontal, 8)
-                            .padding(.vertical, 4)
-                            .background(AppColor.secondary)
-                            .cornerRadius(8)
-                    }
 
                     Image(systemName: "chevron.right")
                         .font(.caption)

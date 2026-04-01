@@ -4,13 +4,10 @@ import SwiftData
 /// 거래 기록 목록 뷰 — 날짜별 그룹핑, 추가/삭제
 struct TransactionListView: View {
     @Environment(\.modelContext) private var modelContext
-    @EnvironmentObject private var premiumService: PremiumService
     @StateObject private var viewModel = TransactionViewModel()
 
     /// 거래 추가 시트 표시 여부
     @State private var showingAddSheet: Bool = false
-    /// 프리미엄 필요 알림 표시 여부
-    @State private var showingPremiumAlert: Bool = false
     /// 삭제 확인 알림 표시 여부
     @State private var showDeleteAlert: Bool = false
     /// 삭제 대상 거래 기록
@@ -38,12 +35,7 @@ struct TransactionListView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        let count = viewModel.currentMonthTransactionCount()
-                        if premiumService.premiumStatus.canRecord(currentMonthCount: count) {
-                            showingAddSheet = true
-                        } else {
-                            showingPremiumAlert = true
-                        }
+                        showingAddSheet = true
                     } label: {
                         Image(systemName: "plus.circle.fill")
                             .foregroundStyle(AppColor.primary)
@@ -53,11 +45,6 @@ struct TransactionListView: View {
             }
             .sheet(isPresented: $showingAddSheet) {
                 AddTransactionView(viewModel: viewModel)
-            }
-            .alert("프리미엄 필요", isPresented: $showingPremiumAlert) {
-                Button("확인", role: .cancel) { }
-            } message: {
-                Text("무료 사용자는 월 \(PremiumStatus.freeMonthlyLimit)건까지 기록 가능합니다.\n프리미엄으로 업그레이드하세요!")
             }
             .alert("이 거래를 삭제하시겠습니까?", isPresented: $showDeleteAlert) {
                 Button("취소", role: .cancel) {
